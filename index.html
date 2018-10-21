@@ -274,13 +274,14 @@ body, html {
     </div>
   </div>
   
-<!-- Modal for description on click-->
+<!-- Modal for description on click
 <div id="modal01" class="w3-modal w3-black w3-opacity-min w3-animate-zoom" style="margin-left: 370px; margin-top: 400px" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-times"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
     <p id="caption" class="w3-large"></p>
   </div>
 </div>
+                                    -->
 
 <!-- Third Parallax Image with Contact Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -319,13 +320,16 @@ body, html {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
 
+
 <script>
+<!--                                                                                           
 // Modal Image Description
 function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+-->
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
