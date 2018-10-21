@@ -231,7 +231,7 @@ body, html {
     </div>
   </div>
     
-  <div class="w3-row-padding w3-center w3-section" style="display: flex;">
+  <div class="w3-row w3-center w3-section" style="display: flex;">
     <div class="w3-col m12" style="flex: 1.2366;">
       <img src="/images/repository.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Initial Designs">
     </div>
@@ -323,8 +323,8 @@ body, html {
 <script>
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
+  // document.getElementById("img01").src = element.src;
+  // document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
