@@ -198,42 +198,42 @@ body, html {
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest sketches, designs and ideas.<br> Click on the images to enlarge!</em></p><br>
+  <p class="w3-center"><em>Here are some of my latest sketches, designs and ideas.</em></p>
 
   <!-- Grid. Four rows on any device -->
   <div class="w3-row-padding w3-center" style="display:flex;">
     <div class="w3-col m3" style="flex: 0.7778;">
-      <img src="/images/Sketch1.JPG" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile Snap 'n Send Sketches">
+      <img src="/images/Sketch1.JPG" style="width:100%;" onclick="onClick(this)" alt="Mobile Snap 'n Send Sketches">
     </div>
    
     <div class="w3-col m3" style="flex: 0.7671;">
-      <img src="/images/Sketch3.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile Snap 'n Send Sketches">
+      <img src="/images/Sketch3.jpg" style="width:100%;" onclick="onClick(this)" alt="Mobile Snap 'n Send Sketches">
     </div>
       
     <div class="w3-col m3" style="flex: 0.7605;">
-      <img src="/images/Sketch4.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile Snap 'n Send Sketches">
+      <img src="/images/Sketch4.jpg" style="width:100%;" onclick="onClick(this)" alt="Mobile Snap 'n Send Sketches">
     </div>
       
     <div class="w3-col m3" style="flex: 0.7639;">
-      <img src="/images/Sketch2.JPG" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile Snap 'n Send Sketches">
+      <img src="/images/Sketch2.JPG" style="width:100%;" onclick="onClick(this)" alt="Mobile Snap 'n Send Sketches">
     </div>
   </div>
   
   <div class="w3-row w3-center w3-section">
     <div class="w3-col m12">
-      <img src="/images/Android-Snap N Send.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile Snap 'n Send">
+      <img src="/images/Android-Snap N Send.jpg" style="width:100%;" onclick="onClick(this)" alt="Mobile Snap 'n Send">
     </div>
   </div>
     
   <div class="w3-row w3-center w3-section">
     <div>
-      <img src="/images/Android-eMessaging.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Mobile eMessaging">
+      <img src="/images/Android-eMessaging.jpg" style="width:100%;" onclick="onClick(this)" alt="Mobile eMessaging">
     </div>
   </div>
     
   <div class="w3-row w3-center w3-section" style="display: flex;">
     <div class="w3-col m12" style="flex: 1.2366;">
-      <img src="/images/repository.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Initial Designs">
+      <img src="/images/repository.jpg" style="width:100%;" onclick="onClick(this)" alt="Icon Repository Initial Designs">
     </div>
   </div>
     
@@ -257,11 +257,22 @@ body, html {
     </div>
   </div>
     
+  <!--  
   <hr>
     
-  <div class="w3-row-padding w3-center w3-section" style="display:flex;">
-    <div class="w3-col m6" style="flex: 0.99;">
-      <img src="/images/Icons.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Social Media Icons">
+    
+    <div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>  -->
+    
+  <div class="container w3-row-padding w3-center w3-section" style="display:flex;">
+    <img src="/images/Icons.jpg" style="width:100%;" alt="Social Media Icons" class="image">
+    <div class="w3-col m6 w3 overlay" style="flex: 0.99;">
+        <p class="text"> HI </p>
+         </div>
     </div>
       
     <div class="w3-col m6" style="flex: 1.6921;">
@@ -274,13 +285,14 @@ body, html {
     </div>
   </div>
   
-<!-- Modal for description on click-->
+<!-- Modal for description on click
 <div id="modal01" class="w3-modal w3-black w3-opacity-min w3-animate-zoom" style="margin-left: 370px; margin-top: 400px" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"<i class="fas fa-times"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent" style= "width: 100%">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fas fa-times"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
     <p id="caption" class="w3-large"></p>
   </div>
 </div>
+                                    -->
 
 <!-- Third Parallax Image with Contact Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -319,13 +331,16 @@ body, html {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
 
+
 <script>
+<!--                                                                                           
 // Modal Image Description
 function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+-->
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
