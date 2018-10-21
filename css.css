@@ -68,9 +68,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	width:50%;
 	height:50%;
 	overflow:auto;
-	background-color:rgb(0,0,0);
-	opacity: 0.75 !important;
-	background-color:rgba(0,0,0,0.4)
+	background-color:rgba(0,0,0,0.7)
 }
 .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
