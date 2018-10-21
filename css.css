@@ -63,10 +63,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	display:none; 
 	padding-top:100px;
 	position:fixed;
-	left:25%;
-	top:25%;
+	left:0;
+	top:0;
 	width:75%;
-	height:75%;
+	height:50%;
 	overflow:auto;
 	background-color:rgba(0,0,0,0.7)
 }
