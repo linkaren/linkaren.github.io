@@ -58,20 +58,53 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
 .w3-main,#main{transition:margin-left .4s}
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 75;
+  transition: .5s ease;
+  background-color: #000000;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .w3-modal {
-	z-index:3;
-	background-color:rgba(0,0,0,0.7) !important;
-	 margin: 0 auto;
-   	 margin-top: 150px;
-	margin-bottom: 200px;
-   	 width: 50%;
-	display:none; 
-	padding-top:100px;
-	position:fixed;
-	left:0;
-	top:0;
-	height:35%;
-	overflow: hidden
+  z-index:3;
+  background-color:rgba(0,0,0,0.7) !important;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  width: 50%;
+  display:none; 
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  height:35%;
+  overflow: hidden
 }
 .w3-modal-content{margin:0 auto;background-color:#fff;position:fixed;padding:0;outline:0;width:600px;max-width:100%}
 .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
