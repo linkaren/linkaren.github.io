@@ -62,11 +62,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	z-index:3;
 	background-color:rgba(0,0,0,0.7) !important;
 	 margin: 0 auto;
-    min-width: 210px;
-    padding: 40px;
-    width: 50%;
-	margin-right: 300px;
-    margin-top: 200px;
+   	 min-width: 210px;
+   	 width: 50%;
+	 margin-top: 200px;
    	 margin-bottom: 200px;
 	display:none; 
 	padding-top:150px;
