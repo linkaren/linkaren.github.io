@@ -321,10 +321,9 @@ body, html {
 </footer>
 
 <script>
-// Modal Image Gallery
+// Modal Image Description
 function onClick(element) {
-  // document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
+  document.getElementById("modal01").style.display = "block" + "opacity: 75%";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
