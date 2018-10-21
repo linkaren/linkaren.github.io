@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Circled_latin_capital_letter_k.svg/241px-Circled_latin_capital_letter_k.svg.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
@@ -231,18 +231,10 @@ body, html {
     </div>
   </div>
     
-  <div class="w3-row-padding w3-center w3-section" style="display: flex;">
-    <div class="w3-col m4" style="flex: 0.7218;">
-      <img src="/images/repository-home.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Landing">
+  <div class="w3-row w3-center w3-section" style="display: flex;">
+    <div class="w3-col m12" style="flex: 1.2366;">
+      <img src="/images/repository.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Initial Designs">
     </div>
-
-    <div class="w3-col m4" style="flex: 1.0941;">
-      <img src="/images/repository-icon.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Icon Modal">
-    </div>
-
-    <div class="w3-col m4" style="flex: 1.1088;">
-      <img src="/images/repository-request.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Icon Repository Request Modal">
-    </div> 
   </div>
     
   <div class="w3-row-padding w3-center w3-section" style="display:flex;">  
@@ -329,9 +321,8 @@ body, html {
 </footer>
 
 <script>
-// Modal Image Gallery
+// Modal Image Description
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
